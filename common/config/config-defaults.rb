@@ -12,9 +12,9 @@
 
 # Set your database name and credentials here.  Example:
 #
-#AppConfig[:db_url] = "jdbc:mysql://127.0.0.1:3306/aspace?useUnicode=true&characterEncoding=UTF-8&user=as&password=as123"
+AppConfig[:db_url] = "jdbc:mysql://127.0.0.1:3306/as_100?useUnicode=true&characterEncoding=UTF-8&user=as&password=as123"
 #
-AppConfig[:db_url] = proc { AppConfig.demo_db_url }
+#AppConfig[:db_url] = proc { AppConfig.demo_db_url }
 
 # Set the maximum number of database connections used by the application.
 # Default is derived from the number of indexer threads.

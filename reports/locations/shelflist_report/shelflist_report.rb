@@ -13,12 +13,6 @@ class ShelflistReport < AbstractReport
     ]
   end
 
-  def processor
-    {
-      'rec_identifier' => proc{|record| ASUtils.json_parse(record[:rec_identifier] || '[]').compact.join('-')}
-    }
-  end
-
   def query
 
     acc = accessions_query
